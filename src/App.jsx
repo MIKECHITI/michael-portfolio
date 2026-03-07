@@ -30,8 +30,8 @@ function App() {
   const education = [
     {
       period: "2022 — present",
-      degree: "Bachelor of Science in Data Science",
-      school: "University of Nairobi",
+      degree: "Bachelor of Science in Mathematics & Computer Science",
+      school: "Maseno University",
       description: "Specialized in data structures and statistical analysis. Completed capstone project on predictive modeling using Python and SQL."
     },
     {
