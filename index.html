@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Michael Mwombe | Portfolio</title>
 
-  <!-- Themify Icons -->
+  <!-- Simple Line Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+  <!-- Font Awesome (for WhatsApp + missing icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
   <!-- Animate.css -->
@@ -174,10 +176,9 @@
       display: flex; gap: 40px; margin-top: 36px; justify-content: center;
     }
     .hero-stat-item { text-align: center; }
-    .hero-stat-item .number {
+    .hero-stat-item .hero-number {
       font-size: 2rem; font-weight: 700; color: #fff; line-height: 1;
     }
-    .hero-stat-item .number span { color: var(--theme-color); }
     .hero-stat-item p { color: var(--text-light); font-size: 13px; margin: 4px 0 0; }
     .floating-button {
       text-align: center; padding: 20px; color: rgba(255,255,255,0.4);
@@ -414,7 +415,7 @@
 
   <!-- Back to top -->
   <div class="btn-back_to_top" id="backToTop">
-    <i class="icon-arrow-up"></i>
+    <i class="fa-solid fa-arrow-up"></i>
   </div>
 
   <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
@@ -455,32 +456,32 @@
       </div>
       <div class="hero-socials">
         <a href="https://github.com/MIKECHITI" target="_blank" title="GitHub">
-          <i class="icon-social-github"></i>
+          <i class="fa-brands fa-github"></i>
         </a>
         <a href="https://x.com/chiti_ke" target="_blank" title="Twitter / X">
-          <i class="icon-social-twitter"></i>
+          <i class="fa-brands fa-x-twitter"></i>
         </a>
         <a href="https://wa.me/+254113112051" target="_blank" title="WhatsApp">
-          <i class="icon-social-whatsapp"></i>
+          <i class="fa-brands fa-whatsapp"></i>
         </a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat-item">
-          <div class="number">3<span>+</span></div>
+          <div class="hero-number">3+</div>
           <p>Years Coding</p>
         </div>
         <div class="hero-stat-item">
-          <div class="number">10<span>+</span></div>
+          <div class="hero-number">10+</div>
           <p>Projects</p>
         </div>
         <div class="hero-stat-item">
-          <div class="number">5<span>+</span></div>
+          <div class="hero-number">5+</div>
           <p>Technologies</p>
         </div>
       </div>
     </div>
 
-    <div class="floating-button"><i class="icon-mouse"></i></div>
+    <div class="floating-button"><i class="fa-regular fa-mouse"></i></div>
   </div>
 
   <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
@@ -508,7 +509,7 @@
             <li><b>Available for:</b> Freelance &amp; Full-time roles</li>
           </ul>
           <a href="assets/data/Michael_CV.pdf" class="btn btn-theme" download>
-            <i class="icon-cloud-download mr-2"></i> Download CV
+            <i class="fa-solid fa-download mr-2"></i> Download CV
           </a>
         </div>
       </div>
@@ -573,7 +574,7 @@
           <h2 class="fw-normal mb-4">Education</h2>
           <ul class="timeline pr-md-4">
             <li>
-              <div class="title">2021 — Present</div>
+              <div class="title">2021 — 2026</div>
               <div class="details">
                 <h5>BSc. Mathematics &amp; Computer Science</h5>
                 <small>Maseno University</small>
@@ -625,28 +626,28 @@
       <div class="row">
         <div class="col-md-6 col-lg-3">
           <div class="card-service wow animate__animated animate__fadeInUp">
-            <div class="icon"><i class="icon-chart"></i></div>
+            <div class="icon"><i class="fa-solid fa-chart-bar"></i></div>
             <h4 class="fg-theme">Data Analysis</h4>
             <p>Data cleaning, exploration, statistical analysis, and actionable insights using Python, SQL, and Power BI.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="card-service wow animate__animated animate__fadeInUp">
-            <div class="icon"><i class="icon-layers"></i></div>
+            <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
             <h4 class="fg-theme">API Development</h4>
             <p>RESTful APIs with Node.js, Express, and MongoDB — secure, scalable, and production-ready.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="card-service wow animate__animated animate__fadeInUp">
-            <div class="icon"><i class="icon-screen-desktop"></i></div>
+            <div class="icon"><i class="fa-solid fa-desktop"></i></div>
             <h4 class="fg-theme">Web Development</h4>
             <p>Full-stack web applications using React, Node.js, and modern CSS frameworks with a clean, responsive UI.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="card-service wow animate__animated animate__fadeInUp">
-            <div class="icon"><i class="icon-shield"></i></div>
+            <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
             <h4 class="fg-theme">Security Auditing</h4>
             <p>Web application vulnerability assessments covering OWASP Top 10, with detailed findings and remediation reports.</p>
           </div>
@@ -832,28 +833,28 @@
       <div class="row justify-content-center">
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="contact-info-item wow animate__animated animate__fadeInUp">
-            <div class="icon"><i class="icon-location-pin"></i></div>
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
             <div>
               <h6>Location</h6>
               <p>Nairobi, Kenya</p>
             </div>
           </div>
           <div class="contact-info-item wow animate__animated animate__fadeInUp">
-            <div class="icon"><i class="icon-social-whatsapp"></i></div>
+            <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
             <div>
               <h6>WhatsApp</h6>
               <p>+254 113 112 051</p>
             </div>
           </div>
           <div class="contact-info-item wow animate__animated animate__fadeInUp">
-            <div class="icon"><i class="icon-social-github"></i></div>
+            <div class="icon"><i class="fa-brands fa-github"></i></div>
             <div>
               <h6>GitHub</h6>
               <p><a href="https://github.com/MIKECHITI" target="_blank" style="color:var(--theme-color)">github.com/MIKECHITI</a></p>
             </div>
           </div>
           <div class="contact-info-item wow animate__animated animate__fadeInUp">
-            <div class="icon"><i class="icon-social-twitter"></i></div>
+            <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
             <div>
               <h6>Twitter / X</h6>
               <p><a href="https://x.com/chiti_ke" target="_blank" style="color:var(--theme-color)">@chiti_ke</a></p>
@@ -897,9 +898,9 @@
             <hr class="divider">
             <p class="fs-large fg-white">Nairobi, Kenya</p>
             <div class="footer-social mt-3">
-              <a href="https://github.com/MIKECHITI" target="_blank"><i class="icon-social-github"></i></a>
-              <a href="https://x.com/chiti_ke" target="_blank"><i class="icon-social-twitter"></i></a>
-              <a href="https://wa.me/+254113112051" target="_blank"><i class="icon-social-whatsapp"></i></a>
+              <a href="https://github.com/MIKECHITI" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://x.com/chiti_ke" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/+254113112051" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
           </div>
         </div>
