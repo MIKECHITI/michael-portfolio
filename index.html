@@ -1,514 +1,1009 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Michael Mwombe</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQB31DM5PF"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Michael Mwombe | Portfolio</title>
 
-  gtag('config', 'G-SQB31DM5PF');
-</script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; scroll-behavior: smooth; }
-        .mesh-gradient {
-            background-image: radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
-                              radial-gradient(at 100% 100%, rgba(20, 184, 166, 0.1) 0px, transparent 50%);
-           
-        }
-        .mono { font-family: 'JetBrains Mono', monospace; }
-    </style>
-</head>
-<body class="mesh-gradient min-h-screen text-slate-900">
+  <!-- Themify Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <nav class="flex items-center justify-between px-10 py-6 max-w-7xl mx-auto">
-        <div class="flex items-center gap-2">
-            <div class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-200">
-                <img src="assets/data/pic.jpg" alt="Mchael Mwombe" class="w-full h-full object-cover">
-            </div>
-            <span class="text-2xl font-extrabold tracking-tight">MICHAEL MWOMBE</span>
-            <img src="assets/data/verified.png" alt="Verified" class="h-6 w-6 object-contain">
-        </div>
-        <div class="hidden md:flex items-center gap-8 font-semibold text-sm text-slate-600">
-            <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-lg">Home</a>
-            <a href="#academic" class="hover:text-blue-600 transition">Education</a>
-            <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-            <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-lg shadow-blue-200 hover:bg-blue-700 transition">Contact</a>
-        </div>
-    </nav>
-
-    <!-- about section -->
-
-    <section class="max-w-7xl mx-auto px-10 pt-20 pb-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
-        <div>
-            <h1 class="text-6xl font-extrabold leading-[1.1] mb-6">
-                Hello, I’m <br> <span class="text-blue-600">Michael Mwombe</span>
-            </h1>
-            <div class="h-8 mb-2">
-                 <span id="typewriter" class="text-blue-600 font-bold mono tracking-[0.2em] uppercase text-sm"></span>
-                <span class="animate-pulse text-blue-600">|</span>
-            </div>
-            <p class="text-lg text-slate-500 leading-relaxed max-w-lg mb-8">
-                Data Analyst with a strong foundation in data cleaning, analysis, and visualization. Experienced in <span class="text-slate-900 font-semibold underline decoration-blue-400">Excel, SQL, Python, and Power BI</span>, with a focus on turning complex data into actionable insights.
-            </p>
-            
-            
-            <div class="flex items-center gap-4">
-              <a href="#contact" class="inline-block bg-blue-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-blue-200 hover:scale-105 transition-all active:scale-95 text-center">
-              Say Hello!
-              </a>
-            </div>
-
-            <div></div>
-            <div class="flex gap-5 mt-8 items-center">
-    <a href="https://github.com/MIKECHITI" target="_blank" class="text-slate-400 hover:text-blue-600 transition-colors">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-    </a>
-                <a href="https://x.com/chiti_ke" target="_blank" title="X (Twitter)" class="text-slate-400 hover:text-slate-900 transition-all hover:scale-110">
-        <i class="fa-brands fa-x-twitter text-2xl"></i>
-    <a href="https://wa.me/+254113112051" target="_blank" class="text-slate-400 hover:text-emerald-500 transition-colors">
-    <i class="fa-brands fa-whatsapp text-2xl"></i>
-</a>
-</div>
-
-            <div class="flex gap-4 mt-20">
-                <div class="bg-white/60 backdrop-blur-sm p-6 rounded-2xl flex-1 border border-blue-100 shadow-sm">
-                    <p class="text-3xl font-extrabold text-slate-900">3+</p>
-                    <p class="text-xs text-blue-600 font-bold uppercase tracking-wider">Years of Coding</p>
-                </div>
-                <div class="bg-white/60 backdrop-blur-sm p-6 rounded-2xl flex-1 border border-blue-100 shadow-sm">
-                    <p class="text-3xl font-extrabold text-slate-900">10+</p>
-                    <p class="text-xs text-blue-600 font-bold uppercase tracking-wider">Projects</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="relative">
-            <div class="bg-white p-4 rounded-[40px] shadow-2xl shadow-slate-200">
-                <img src="assets/data/image.jpg" 
-                     alt="Michael Mwombe Profile" 
-                     class="rounded-[32px] w-full h-[550px] object-cover">
-            </div>
-
-            <a href="assets/data/Michael_CV.pdf" download="Michael_CV" 
-               class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-2xl border border-slate-100 group transition-all hover:bg-blue-600 hover:scale-105 cursor-pointer">
-                <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 group-hover:bg-white/20 group-hover:text-white transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.15em] group-hover:text-blue-100 transition-colors">Resume</p>
-                        <p class="text-base font-extrabold text-slate-900 group-hover:text-white transition-colors">My CV</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Education section -->
-
-    <section id="academic" class="max-w-7xl mx-auto px-10 py-24">
-        <div class="flex flex-col md:flex-row gap-16">
-            
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-extrabold mb-10 flex items-center gap-4">
-                    Education <span class="h-px bg-blue-200 flex-1"></span>
-                </h2>
-                
-                <div class="space-y-12 border-l-2 border-blue-100 ml-4 pl-8 relative">
-                    <div class="relative">
-                        <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
-                        <p class="text-blue-600 font-bold text-sm mb-1">2021 — present</p>
-                        <h3 class="text-xl font-extrabold text-slate-900">Bachelor of Science in Mathematics And Computer Science</h3>
-                        <p class="text-slate-600 font-semibold text-sm">Maseno University</p>
-                        <p class="mt-3 text-slate-500 text-sm leading-relaxed">
-                            Specialized in data structures and statistical analysis. Completed a capstone project focused on predictive modeling using Python and SQL.
-                        </p>
-                    </div>
-
-                    <div class="relative">
-                        <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-slate-200 border-4 border-white shadow-sm"></div>
-                        <p class="text-slate-400 font-bold text-sm mb-1">2023</p>
-                        <h3 class="text-xl font-extrabold text-slate-900">Advanced Data Analytics Specialization</h3>
-                        <p class="text-slate-600 font-semibold text-sm">Google / Coursera</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="md:w-1/2 bg-slate-50 rounded-[32px] p-10 border border-slate-100">
-                <h2 class="text-2xl font-extrabold mb-8 text-slate-900"><strong>Key Coursework</strong></h2>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-blue-50">
-                        <p class="text-blue-600 font-bold text-xs uppercase mb-1">Statistics</p>
-                        <p class="text-slate-800 font-bold text-sm">Probability & Inference</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-blue-50">
-                        <p class="text-blue-600 font-bold text-xs uppercase mb-1">Programming</p>
-                        <p class="text-slate-800 font-bold text-sm">Data Structures in Python</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-blue-50">
-                        <p class="text-blue-600 font-bold text-xs uppercase mb-1">Databases</p>
-                        <p class="text-slate-800 font-bold text-sm">Relational SQL Design</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-blue-50">
-                        <p class="text-blue-600 font-bold text-xs uppercase mb-1">Visualization</p>
-                        <p class="text-slate-800 font-bold text-sm">Power BI Dashboarding</p>
-                    </div>
-                </div>
-
-                <div class="mt-10 pt-8 border-t border-slate-200">
-                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Technical Proficiencies</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-4 py-2 bg-blue-600 text-white text-xs font-bold rounded-full">Python (Pandas/NumPy)</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-600 text-xs font-bold rounded-full">SQL (PostgreSQL)</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-600 text-xs font-bold rounded-full">Power BI</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-600 text-xs font-bold rounded-full">Advanced Excel</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- portfolio section -->
-
-    <section id="projects" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-8 gradient-text">Selected Works</h2>
-            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                Explore my portfolio showcasing data analysis, full-stack development, and IoT projects.
-            </p>
-            
-            <!-- Project Filter Buttons -->
-            <div class="flex justify-center mb-12">
-                <div class="inline-flex rounded-lg border border-gray-200 bg-black p-1">
-                    <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium bg-white text-black" data-filter="all">
-                        All Projects
-                    </button>
-                    <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800" data-filter="data">
-                        Data Analysis
-                    </button>
-                    <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800" data-filter="web">
-                        Web Development
-                    </button>
-                    <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800" data-filter="iot">
-                        IoT & Other
-                    </button>
-                </div>
-            </div>
-            
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="project-card card-hover bg-gray-50 rounded-lg overflow-hidden" data-categories="web">
-                    <div class="bg-gradient-to-r from-indigo-600 to-blue-600 h-2"></div>
-                    <div class="relative h-48 overflow-hidden bg-gray-100">
-                        <img src="assets/images/portfolio-website.jpg" alt="Modern portfolio website interface showing responsive design and clean layout" 
-                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                            onerror="this.src='https://picsum.photos/seed/portfolio-site/400/300.jpg'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
-                                <p class="text-sm font-medium">Web Development</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <i class="fas fa-code text-indigo-600 text-2xl mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">Custom Responsive Portfolio</h3>
-                        <p class="text-gray-600 mb-4">Modern portfolio website built with Tailwind CSS and React for optimal user experience.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">React</span>
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Tailwind CSS</span>
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Responsive Design</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card card-hover bg-gray-50 rounded-lg overflow-hidden" data-categories="web">
-                    <div class="bg-gradient-to-r from-indigo-600 to-blue-600 h-2"></div>
-                    <div class="relative h-48 overflow-hidden bg-gray-100">
-                        <img src="assets/images/ecommerce-storefront.jpg" alt="E-commerce storefront with product listings, shopping cart, and Stripe payment integration" 
-                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                            onerror="this.src='https://picsum.photos/seed/ecommerce-store/400/300.jpg'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
-                                <p class="text-sm font-medium">Full-Stack Development</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <i class="fas fa-shopping-cart text-indigo-600 text-2xl mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">E-Commerce Storefront</h3>
-                        <p class="text-gray-600 mb-4">Full-stack application featuring Stripe integration and user authentication.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">React</span>
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Node.js</span>
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Stripe</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card card-hover bg-gray-50 rounded-lg overflow-hidden" data-categories="web">
-                    <div class="bg-gradient-to-r from-indigo-600 to-blue-600 h-2"></div>
-                    <div class="relative h-48 overflow-hidden bg-gray-100">
-                        <img src="assets/images/task-management-api.jpg" alt="Task management API documentation showing RESTful endpoints and database schema" 
-                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                            onerror="this.src='https://picsum.photos/seed/task-api/400/300.jpg'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
-                                <p class="text-sm font-medium">API Development</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <i class="fas fa-server text-indigo-600 text-2xl mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">Task Management API</h3>
-                        <p class="text-gray-600 mb-4">RESTful API built with Node.js and MongoDB for agile teams.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Node.js</span>
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">MongoDB</span>
-                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">REST API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card card-hover bg-gray-50 rounded-lg overflow-hidden" data-categories="iot">
-                    <div class="bg-gradient-to-r from-green-600 to-teal-600 h-2"></div>
-                    <div class="relative h-48 overflow-hidden bg-gray-100">
-                        <img src="assets/images/smart-home-controller.jpg" alt="Arduino-based smart home controller with sensors for plant moisture monitoring" 
-                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                            onerror="this.src='https://picsum.photos/seed/arduino-iot/400/300.jpg'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
-                                <p class="text-sm font-medium">IoT Development</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <i class="fas fa-microchip text-green-600 text-2xl mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">Smart Home Controller</h3>
-                        <p class="text-gray-600 mb-4">Arduino-based sensor system for monitoring plant moisture levels.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Arduino</span>
-                            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">IoT</span>
-                            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Sensors</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card card-hover bg-gray-50 rounded-lg overflow-hidden" data-categories="iot">
-                    <div class="bg-gradient-to-r from-red-600 to-orange-600 h-2"></div>
-                    <div class="relative h-48 overflow-hidden bg-gray-100">
-                        <img src="assets/images/cybersecurity-audit.jpg" alt="Cybersecurity audit report showing network vulnerability analysis and penetration testing results" 
-                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                            onerror="this.src='https://picsum.photos/seed/cybersecurity/400/300.jpg'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
-                                <p class="text-sm font-medium">Security Analysis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <i class="fas fa-shield-alt text-red-600 text-2xl mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">Cybersecurity Audit</h3>
-                        <p class="text-gray-600 mb-4">Network security assessment and penetration testing analysis.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Security</span>
-                            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Pen Testing</span>
-                            <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Network</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card card-hover bg-gray-50 rounded-lg overflow-hidden" data-categories="data">
-                    <div class="bg-gradient-to-r from-blue-600 to-cyan-600 h-2"></div>
-                    <div class="relative h-48 overflow-hidden bg-gray-100">
-                        <img src="assets/data/data.png" alt="Data analysis visualization showing insights and metrics" 
-                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                            onerror="this.src='https://picsum.photos/seed/data-analysis/400/300.jpg'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white">
-                                <p class="text-sm font-medium">Data Analysis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <i class="fas fa-chart-line text-blue-600 text-2xl mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">Data Analysis Projects</h3>
-                        <p class="text-gray-600 mb-4">Comprehensive data cleaning, analysis, and visualization projects using Python and Power BI.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Python</span>
-                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Power BI</span>
-                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">SQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- contact section -->
-    <section id="contact" class="max-w-7xl mx-auto px-10 py-24">
-        <div class="bg-slate-900 rounded-[48px] p-8 md:p-16 overflow-hidden relative shadow-2xl shadow-blue-200">
-            
-            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <div>
-                    <h2 class="text-xs font-bold text-blue-400 uppercase tracking-[0.2em] mb-4">Get in Touch</h2>
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-8">Let's work together on your next <span class="text-blue-400">data project.</span></h3>
-                </div>
-
-               <form action="https://formspree.io/f/xlgpjnlz" method="POST" class="space-y-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            class="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-400 transition"
-        >
-
-        <input
-            type="email"
-            name="email"
-            placeholder="Email Address/Tel No"
-            required
-            class="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-400 transition"
-        >
-    </div>
-
-    <textarea
-        name="message"
-        rows="4"
-        placeholder="How can I help you?"
-        required
-        class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-blue-400 transition"
-    ></textarea>
-
-    <!-- REQUIRED by Formspree -->
-    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-
-    <button
-        type="submit"
-        class="w-full bg-blue-600 text-white font-bold py-4 rounded-2xl shadow-xl shadow-blue-900/20 hover:bg-blue-500 transition-all"
-    >
-        Send Message
-    </button>
-</form>
-
-            </div>
-        </div>
-
-        <footer class="mt-16 text-center text-slate-400 text-sm">
-            <p>© 2026 Michael Mwombe. Built with Tailwind CSS.</p>
-        </footer>
-    </section>
-
-    <style>
-        .filter-btn { color: #d1d5db; }
-        .active-filter { background-color: white; color: #000000; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
-    </style>
-
-    <script>
-        function filterProjects(category) {
-            // Update button styles
-            const buttons = document.querySelectorAll('.filter-btn');
-            buttons.forEach(btn => btn.classList.remove('active-filter'));
-            event.target.classList.add('active-filter');
-
-            // Filter items
-            const items = document.querySelectorAll('.project-card');
-            items.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-categories') === category) {
-                    item.style.display = 'block';
-                    setTimeout(() => item.style.opacity = '1', 10);
-                } else {
-                    item.style.opacity = '0';
-                    setTimeout(() => item.style.display = 'none', 300);
-                }
-            });
-        }
-
-        // Add event listeners to filter buttons
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    filterProjects(this.getAttribute('data-filter'));
-                });
-            });
-        });
-    </script>
-    <script>
-    const typewriterElement = document.getElementById('typewriter');
-    const phrases = ['Data Analyst', 'Computer Scientist', 'And', 'Mathematician'];
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typeSpeed = 150;
-
-    function type() {
-        const currentPhrase = phrases[phraseIndex];
-        
-        if (isDeleting) {
-            typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
-            charIndex--;
-            typeSpeed = 100;
-        } else {
-            typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
-            charIndex++;
-            typeSpeed = 100;
-        }
-
-        if (!isDeleting && charIndex === currentPhrase.length) {
-            isDeleting = true;
-            typeSpeed = 2000; // Pause at the end of the word
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            typeSpeed = 500;
-        }
-
-        setTimeout(type, typeSpeed);
+  <style>
+    :root {
+      --theme-color: #2563eb;
+      --theme-color-dark: #1d4ed8;
+      --theme-color-light: rgba(37,99,235,0.12);
+      --dark-bg: #0f172a;
+      --dark-bg-2: #1e293b;
+      --text-light: #94a3b8;
+      --white: #ffffff;
     }
 
-    // Start the effect on page load
-    document.addEventListener('DOMContentLoaded', type);
-</script>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400;
+      background: #fff;
+      color: #334155;
+    }
+
+    /* ─── Utility ─── */
+    .fw-light  { font-weight: 300; }
+    .fw-normal { font-weight: 400; }
+    .fw-medium { font-weight: 500; }
+    .fw-bold   { font-weight: 700; }
+    .fg-theme  { color: var(--theme-color) !important; }
+    .fs-large  { font-size: 21px; }
+    .fg-white  { color: #fff !important; }
+
+    /* ─── Back to top ─── */
+    .btn-back_to_top {
+      position: fixed; bottom: 30px; right: 30px; z-index: 999;
+      width: 44px; height: 44px; background: var(--theme-color);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      color: #fff; cursor: pointer; opacity: 0; transition: opacity 0.3s;
+      box-shadow: 0 4px 16px rgba(37,99,235,0.35);
+    }
+    .btn-back_to_top.visible { opacity: 1; }
+    .btn-back_to_top:hover { background: var(--theme-color-dark); }
+
+    /* ─── Navbar ─── */
+    .navbar {
+      padding: 18px 0;
+      transition: background 0.4s, padding 0.3s;
+    }
+    .navbar.sticky-active {
+      background: rgba(15,23,42,0.97) !important;
+      padding: 10px 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .navbar-brand {
+      font-size: 22px; font-weight: 700; color: #fff !important;
+      letter-spacing: 1px;
+    }
+    .navbar-brand span { color: var(--theme-color); }
+    .nav-link {
+      color: rgba(255,255,255,0.85) !important;
+      font-weight: 500; font-size: 15px;
+      padding: 6px 14px !important;
+      transition: color 0.2s;
+    }
+    .nav-link:hover, .nav-item.active .nav-link { color: #fff !important; }
+    .nav-link::after {
+      content: ''; display: block; height: 2px;
+      background: var(--theme-color); transform: scaleX(0);
+      transition: transform 0.25s;
+    }
+    .nav-link:hover::after { transform: scaleX(1); }
+
+    /* ─── Hero ─── */
+    .page-home {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #0f172a 100%);
+      position: relative; overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .page-home::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(37,99,235,0.18) 0%, transparent 70%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image: linear-gradient(#fff 1px, transparent 1px),
+                        linear-gradient(90deg, #fff 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .caption-header {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 120px 20px 60px; position: relative; z-index: 2;
+    }
+    .caption-header h5 {
+      color: var(--theme-color); text-transform: uppercase;
+      letter-spacing: 4px; font-size: 13px; font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .caption-header h1 {
+      color: #fff; font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.15; margin-bottom: 20px;
+    }
+    .caption-header h1 b { color: var(--theme-color); font-weight: 700; }
+    .badge-role {
+      display: inline-block; padding: 8px 22px;
+      border: 1.5px solid rgba(37,99,235,0.6);
+      border-radius: 40px; color: rgba(255,255,255,0.85);
+      font-size: 14px; letter-spacing: 1.5px; font-weight: 500;
+      margin-bottom: 32px;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+    .btn-theme {
+      background: var(--theme-color); color: #fff; border: none;
+      padding: 11px 28px; border-radius: 6px; font-weight: 600;
+      font-size: 14px; font-family: 'Quicksand', sans-serif;
+      transition: background 0.2s, transform 0.15s;
+      cursor: pointer;
+    }
+    .btn-theme:hover { background: var(--theme-color-dark); transform: translateY(-1px); color: #fff; text-decoration: none; }
+    .btn-theme-outline {
+      background: transparent; color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.45);
+      padding: 10px 27px; border-radius: 6px; font-weight: 600;
+      font-size: 14px; font-family: 'Quicksand', sans-serif;
+      transition: border-color 0.2s, color 0.2s, transform 0.15s;
+      cursor: pointer;
+    }
+    .btn-theme-outline:hover {
+      border-color: var(--theme-color); color: var(--theme-color);
+      transform: translateY(-1px); text-decoration: none;
+    }
+    .btn-theme-outline.dark {
+      color: var(--theme-color); border-color: var(--theme-color);
+    }
+    .btn-theme-outline.dark:hover { background: var(--theme-color-light); }
+    .hero-socials {
+      display: flex; gap: 14px; margin-top: 28px; justify-content: center;
+    }
+    .hero-socials a {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.7); font-size: 15px;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+      text-decoration: none;
+    }
+    .hero-socials a:hover {
+      border-color: var(--theme-color); color: var(--theme-color);
+      transform: translateY(-2px);
+    }
+    .hero-stats {
+      display: flex; gap: 40px; margin-top: 36px; justify-content: center;
+    }
+    .hero-stat-item { text-align: center; }
+    .hero-stat-item .number {
+      font-size: 2rem; font-weight: 700; color: #fff; line-height: 1;
+    }
+    .hero-stat-item .number span { color: var(--theme-color); }
+    .hero-stat-item p { color: var(--text-light); font-size: 13px; margin: 4px 0 0; }
+    .floating-button {
+      text-align: center; padding: 20px; color: rgba(255,255,255,0.4);
+      font-size: 20px; animation: float 2s ease-in-out infinite; position: relative; z-index: 2;
+    }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
+
+    /* ─── Section common ─── */
+    .vg-page { padding: 80px 0; }
+    .badge-subhead {
+      display: inline-block; background: var(--theme-color-light);
+      color: var(--theme-color); padding: 5px 16px; border-radius: 20px;
+      font-size: 12px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; margin-bottom: 12px;
+    }
+
+    /* ─── About ─── */
+    .page-about { background: #fff; }
+    .img-place img {
+      width: 100%; border-radius: 12px;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+    }
+    .img-place.profile-img img {
+      border: 4px solid var(--theme-color-light);
+    }
+    .theme-list { list-style: none; padding: 0; margin: 16px 0; }
+    .theme-list li {
+      padding: 7px 0; border-bottom: 1px solid #f1f5f9;
+      font-size: 15px; color: #475569;
+    }
+    .theme-list li b { color: #1e293b; margin-right: 6px; }
+
+    /* ─── Skills ─── */
+    .progress-wrapper { margin-bottom: 18px; }
+    .progress-wrapper .caption {
+      display: flex; justify-content: space-between;
+      font-size: 14px; font-weight: 600; color: #334155; margin-bottom: 6px;
+    }
+    .progress { height: 7px; background: #e2e8f0; border-radius: 10px; }
+    .progress-bar {
+      background: linear-gradient(90deg, var(--theme-color), #60a5fa);
+      border-radius: 10px; transition: width 1.2s ease;
+    }
+
+    /* ─── Timeline ─── */
+    .timeline { list-style: none; padding: 0; position: relative; }
+    .timeline::before {
+      content: ''; position: absolute; left: 6px; top: 8px; bottom: 0;
+      width: 2px; background: #e2e8f0;
+    }
+    .timeline li { position: relative; padding-left: 30px; margin-bottom: 28px; }
+    .timeline li::before {
+      content: ''; position: absolute; left: 0; top: 7px;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--theme-color); border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--theme-color);
+    }
+    .timeline .title {
+      font-size: 12px; font-weight: 700; color: var(--theme-color);
+      text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;
+    }
+    .timeline .details h5 { font-size: 16px; font-weight: 600; color: #1e293b; margin-bottom: 2px; }
+    .timeline .details small { color: var(--theme-color); font-size: 13px; font-weight: 600; }
+    .timeline .details p { color: #64748b; font-size: 14px; margin-top: 5px; }
+
+    /* ─── Services ─── */
+    .page-service { background: #f8fafc; }
+    .card-service {
+      border: none; border-radius: 12px; padding: 32px 24px;
+      margin-bottom: 24px; transition: transform 0.25s, box-shadow 0.25s;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      background: #fff;
+    }
+    .card-service:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(37,99,235,0.12);
+    }
+    .card-service .icon {
+      width: 56px; height: 56px; background: var(--theme-color-light);
+      border-radius: 14px; display: flex; align-items: center; justify-content: center;
+      font-size: 22px; color: var(--theme-color); margin-bottom: 18px;
+    }
+    .card-service h4 { font-size: 17px; font-weight: 700; color: #1e293b; margin-bottom: 8px; }
+    .card-service p { font-size: 14px; color: #64748b; margin: 0; line-height: 1.6; }
+
+    /* ─── Fun facts ─── */
+    .page-funfact {
+      background: linear-gradient(135deg, #0f172a, #1e3a5f);
+      color: #fff; text-align: center; position: relative; overflow: hidden;
+    }
+    .page-funfact::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, rgba(37,99,235,0.2), transparent 70%);
+    }
+    .section-counter .col-md-6 { position: relative; z-index: 1; }
+    .section-counter h1.number {
+      font-size: 3.2rem; font-weight: 700; color: #fff; margin-bottom: 4px;
+    }
+    .section-counter span { color: var(--text-light); font-size: 14px; font-weight: 500; }
+
+    /* ─── Portfolio ─── */
+    .page-portfolio { background: #fff; }
+    .filterable-button { display: flex; flex-wrap: wrap; gap: 10px; }
+    .filterable-button .btn {
+      border: 1.5px solid #cbd5e1; color: #64748b; background: transparent;
+      padding: 7px 18px; border-radius: 6px; font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: all 0.2s; font-family: 'Quicksand', sans-serif;
+    }
+    .filterable-button .btn.selected,
+    .filterable-button .btn:hover {
+      border-color: var(--theme-color); color: var(--theme-color);
+      background: var(--theme-color-light);
+    }
+    .gridder { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .grid-item { border-radius: 12px; overflow: hidden; position: relative; cursor: pointer; }
+    .grid-item .img-place { position: relative; overflow: hidden; }
+    .grid-item img {
+      width: 100%; height: 220px; object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .grid-item:hover img { transform: scale(1.06); }
+    .img-caption {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(15,23,42,0.85), transparent);
+      opacity: 0; transition: opacity 0.3s;
+      display: flex; flex-direction: column; justify-content: flex-end; padding: 18px;
+    }
+    .grid-item:hover .img-caption { opacity: 1; }
+    .img-caption h5 { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+    .img-caption p { color: rgba(255,255,255,0.7); font-size: 12px; margin: 0; }
+    .project-card {
+      background: #fff; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(37,99,235,0.13);
+    }
+    .project-card-body { padding: 20px; }
+    .project-card-body h5 { font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 6px; }
+    .project-card-body p { font-size: 13px; color: #64748b; margin-bottom: 12px; line-height: 1.55; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 11px; font-weight: 700; padding: 3px 10px;
+      border-radius: 20px; background: var(--theme-color-light);
+      color: var(--theme-color); letter-spacing: 0.5px;
+    }
+    .project-category {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1.5px; color: var(--theme-color); margin-bottom: 6px;
+      display: block;
+    }
+    .project-img-placeholder {
+      height: 200px; overflow: hidden; position: relative;
+    }
+    .project-img-placeholder img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .project-card:hover .project-img-placeholder img {
+      transform: scale(1.06);
+    }
+    .project-img-placeholder .img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 40%, rgba(15,23,42,0.55) 100%);
+    }
+
+    /* ─── Contact ─── */
+    .page-contact { background: #f8fafc; }
+    .vg-contact-form .form-control {
+      border: 1.5px solid #e2e8f0; border-radius: 8px;
+      padding: 12px 16px; font-family: 'Quicksand', sans-serif;
+      font-size: 14px; color: #334155;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .vg-contact-form .form-control:focus {
+      border-color: var(--theme-color);
+      box-shadow: 0 0 0 3px var(--theme-color-light);
+      outline: none;
+    }
+    .contact-info-item {
+      display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px;
+    }
+    .contact-info-item .icon {
+      width: 44px; height: 44px; min-width: 44px;
+      background: var(--theme-color-light); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; color: var(--theme-color);
+    }
+    .contact-info-item h6 { font-size: 13px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
+    .contact-info-item p { font-size: 15px; color: #1e293b; margin: 0; font-weight: 500; }
+
+    /* ─── Footer ─── */
+    .vg-footer {
+      background: var(--dark-bg); color: rgba(255,255,255,0.7);
+      padding: 60px 0 30px;
+    }
+    .vg-footer h1 {
+      font-size: 2.5rem; font-weight: 300; color: #fff;
+      padding-bottom: 30px; margin-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+    .vg-footer h1 span { color: var(--theme-color); font-weight: 700; }
+    .footer-info p { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; color: rgba(255,255,255,0.4); }
+    .vg-footer hr.divider { border-color: rgba(255,255,255,0.1); margin: 0 0 16px; }
+    .vg-footer ul li { margin-bottom: 8px; }
+    .vg-footer ul li a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .vg-footer ul li a:hover { color: var(--theme-color); }
+    .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+    .footer-social a {
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.5); font-size: 14px;
+      transition: border-color 0.2s, color 0.2s; text-decoration: none;
+    }
+    .footer-social a:hover { border-color: var(--theme-color); color: var(--theme-color); }
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.3); text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); }
+
+    /* ─── Animations ─── */
+    .wow { visibility: hidden; }
+    .animated { visibility: visible; }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 768px) {
+      .hero-stats { gap: 24px; }
+      .vg-page { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back to top -->
+  <div class="btn-back_to_top" id="backToTop">
+    <i class="icon-arrow-up"></i>
+  </div>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <div class="vg-page page-home" id="home">
+    <div class="hero-grid"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+      <div class="container">
+        <a href="#home" class="navbar-brand">M<span>.</span>Mwombe</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item">
+              <a href="assets/data/Michael_CV.pdf" class="btn btn-theme btn-sm ml-3" download>Download CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Caption -->
+    <div class="caption-header animate__animated animate__zoomInDown">
+      <h5>Welcome to my portfolio</h5>
+      <h1 class="fw-light">I'm <b>Michael Mwombe</b></h1>
+      <div class="badge-role">Data Analyst &amp; Full-Stack Developer</div>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-theme">View My Work</a>
+        <a href="#contact" class="btn-theme-outline">Say Hello</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/MIKECHITI" target="_blank" title="GitHub">
+          <i class="icon-social-github"></i>
+        </a>
+        <a href="https://x.com/chiti_ke" target="_blank" title="Twitter / X">
+          <i class="icon-social-twitter"></i>
+        </a>
+        <a href="https://wa.me/+254113112051" target="_blank" title="WhatsApp">
+          <i class="icon-social-whatsapp"></i>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <div class="number">3<span>+</span></div>
+          <p>Years Coding</p>
+        </div>
+        <div class="hero-stat-item">
+          <div class="number">10<span>+</span></div>
+          <p>Projects</p>
+        </div>
+        <div class="hero-stat-item">
+          <div class="number">5<span>+</span></div>
+          <p>Technologies</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-button"><i class="icon-mouse"></i></div>
+  </div>
+
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <div class="vg-page page-about" id="about">
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <div class="col-lg-4 py-3">
+          <div class="img-place profile-img wow animate__animated animate__fadeInUp">
+            <img src="assets/data/pic.jpg" alt="Michael Mwombe">
+          </div>
+        </div>
+        <div class="col-lg-7 offset-lg-1 wow animate__animated animate__fadeInRight">
+          <h1 class="fw-light">Michael Mwombe</h1>
+          <h5 class="fg-theme mb-3">Data Analyst &amp; Full-Stack Developer</h5>
+          <p class="text-muted" style="line-height:1.7">
+            Data Analyst with a strong foundation in data cleaning, analysis, and visualization.
+            Experienced in Excel, SQL, Python, and Power BI, with a focus on turning complex data
+            into actionable insights. I also build robust backends and RESTful APIs using Node.js
+            and MongoDB, and create responsive, polished frontends.
+          </p>
+          <ul class="theme-list">
+            <li><b>Location:</b> Nairobi, Kenya</li>
+            <li><b>University:</b> Maseno University</li>
+            <li><b>Degree:</b> BSc. Mathematics &amp; Computer Science</li>
+            <li><b>Available for:</b> Freelance &amp; Full-time roles</li>
+          </ul>
+          <a href="assets/data/Michael_CV.pdf" class="btn btn-theme" download>
+            <i class="icon-cloud-download mr-2"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="container py-5">
+      <div class="text-center mb-4">
+        <div class="badge-subhead wow animate__animated animate__fadeInUp">Expertise</div>
+        <h1 class="fw-normal wow animate__animated animate__fadeInUp">My Skills</h1>
+      </div>
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow animate__animated animate__fadeInUp mb-3">Development</h4>
+            <div class="progress-wrapper wow animate__animated animate__fadeInUp">
+              <span class="caption">Python <span>90%</span></span>
+              <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+            </div>
+            <div class="progress-wrapper wow animate__animated animate__fadeInUp">
+              <span class="caption">Node.js / Express <span>82%</span></span>
+              <div class="progress"><div class="progress-bar" style="width:82%"></div></div>
+            </div>
+            <div class="progress-wrapper wow animate__animated animate__fadeInUp">
+              <span class="caption">JavaScript / React <span>78%</span></span>
+              <div class="progress"><div class="progress-bar" style="width:78%"></div></div>
+            </div>
+            <div class="progress-wrapper wow animate__animated animate__fadeInUp">
+              <span class="caption">MongoDB / SQL <span>85%</span></span>
+              <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="px-lg-3">
+            <h4 class="wow animate__animated animate__fadeInUp mb-3">Data &amp; Analytics</h4>
+            <div class="progress-wrapper wow animate__animated animate__fadeInUp">
+              <span class="caption">Power BI <span>88%</span></span>
+              <div class="progress"><div class="progress-bar" style="width:88%"></div></div>
+            </div>
+            <div class="progress-wrapper wow animate__animated animate__fadeInUp">
+              <span class="caption">Advanced Excel <span>90%</span></span>
+              <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+            </div>
+            <div class="progress-wrapper wow animate__animated animate__fadeInUp">
+              <span class="caption">Pandas / NumPy <span>85%</span></span>
+              <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+            </div>
+            <div class="progress-wrapper wow animate__animated animate__fadeInUp">
+              <span class="caption">PostgreSQL <span>80%</span></span>
+              <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education & Experience -->
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-6 wow animate__animated animate__fadeInRight">
+          <h2 class="fw-normal mb-4">Education</h2>
+          <ul class="timeline pr-md-4">
+            <li>
+              <div class="title">2021 — Present</div>
+              <div class="details">
+                <h5>BSc. Mathematics &amp; Computer Science</h5>
+                <small>Maseno University</small>
+                <p>Specialized in data structures, statistical analysis, and algorithms. Capstone project on predictive modeling using Python and SQL.</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2023</div>
+              <div class="details">
+                <h5>Advanced Data Analytics Specialization</h5>
+                <small>Google / Coursera</small>
+                <p>Completed coursework in statistics, data structures, relational SQL design, and Power BI dashboarding.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 wow animate__animated animate__fadeInRight mt-4 mt-md-0">
+          <h2 class="fw-normal mb-4">Experience</h2>
+          <ul class="timeline pr-md-4">
+            <li>
+              <div class="title">2023 — Present</div>
+              <div class="details">
+                <h5>Full-Stack Developer &amp; Data Analyst</h5>
+                <small>Freelance</small>
+                <p>Building RESTful APIs, data dashboards, and full-stack web applications for clients across various industries.</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2022</div>
+              <div class="details">
+                <h5>Data Analysis Projects</h5>
+                <small>Academic &amp; Personal</small>
+                <p>Developed data cleaning pipelines and visualization dashboards using Python, Power BI, and Excel.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
+  <div class="vg-page page-service">
+    <div class="container">
+      <div class="text-center wow animate__animated animate__fadeInUp">
+        <div class="badge-subhead">Services</div>
+      </div>
+      <h1 class="fw-normal text-center wow animate__animated animate__fadeInUp mb-5">What I Can Do</h1>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-service wow animate__animated animate__fadeInUp">
+            <div class="icon"><i class="icon-chart"></i></div>
+            <h4 class="fg-theme">Data Analysis</h4>
+            <p>Data cleaning, exploration, statistical analysis, and actionable insights using Python, SQL, and Power BI.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-service wow animate__animated animate__fadeInUp">
+            <div class="icon"><i class="icon-layers"></i></div>
+            <h4 class="fg-theme">API Development</h4>
+            <p>RESTful APIs with Node.js, Express, and MongoDB — secure, scalable, and production-ready.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-service wow animate__animated animate__fadeInUp">
+            <div class="icon"><i class="icon-screen-desktop"></i></div>
+            <h4 class="fg-theme">Web Development</h4>
+            <p>Full-stack web applications using React, Node.js, and modern CSS frameworks with a clean, responsive UI.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-service wow animate__animated animate__fadeInUp">
+            <div class="icon"><i class="icon-shield"></i></div>
+            <h4 class="fg-theme">Security Auditing</h4>
+            <p>Web application vulnerability assessments covering OWASP Top 10, with detailed findings and remediation reports.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ STATS ═══════════════════════════ -->
+  <div class="vg-page page-funfact py-5">
+    <div class="container">
+      <div class="row section-counter text-center">
+        <div class="col-6 col-md-3 py-4 wow animate__animated animate__fadeIn">
+          <h1 class="number" data-number="3">3</h1>
+          <span>Years Coding</span>
+        </div>
+        <div class="col-6 col-md-3 py-4 wow animate__animated animate__fadeIn">
+          <h1 class="number" data-number="10">10</h1>
+          <span>Projects Completed</span>
+        </div>
+        <div class="col-6 col-md-3 py-4 wow animate__animated animate__fadeIn">
+          <h1 class="number" data-number="5">5</h1>
+          <span>Technologies</span>
+        </div>
+        <div class="col-6 col-md-3 py-4 wow animate__animated animate__fadeIn">
+          <h1 class="number" data-number="100">100</h1>
+          <span>% Commitment</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ PORTFOLIO ═══════════════════════════ -->
+  <div class="vg-page page-portfolio" id="portfolio">
+    <div class="container">
+      <div class="text-center wow animate__animated animate__fadeInUp">
+        <div class="badge-subhead">Portfolio</div>
+      </div>
+      <h1 class="text-center fw-normal wow animate__animated animate__fadeInUp">Selected Works</h1>
+      <p class="text-center text-muted mb-4 wow animate__animated animate__fadeInUp">
+        Explore my data analysis, full-stack development, and security projects.
+      </p>
+
+      <!-- Filter buttons -->
+      <div class="filterable-button py-3 wow animate__animated animate__fadeInUp" id="filterBtns">
+        <button class="btn selected" data-filter="all">All Projects</button>
+        <button class="btn" data-filter="data">Data Analysis</button>
+        <button class="btn" data-filter="api">API / Backend</button>
+        <button class="btn" data-filter="web">Web Dev</button>
+        <button class="btn" data-filter="security">Security</button>
+        <button class="btn" data-filter="iot">IoT</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="gridder my-4" id="projectGrid">
+
+        <div class="project-card grid-item api wow animate__animated animate__zoomIn">
+          <div class="project-img-placeholder">
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80" alt="Task Management API">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">API Development</span>
+            <h5>Task Management API</h5>
+            <p>RESTful API for agile teams. JWT auth, workspaces, full task CRUD with filtering, rate limiting, and MongoDB Atlas.</p>
+            <div class="tag-list">
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">REST API</span>
+              <span class="tag">JWT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card grid-item security wow animate__animated animate__zoomIn">
+          <div class="project-img-placeholder">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80" alt="Cybersecurity Audit">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">Security Analysis</span>
+            <h5>Cybersecurity Audit</h5>
+            <p>Network security assessment and penetration testing on DVWA, covering OWASP Top 10 with findings and remediation report.</p>
+            <div class="tag-list">
+              <span class="tag">Security</span>
+              <span class="tag">Pen Testing</span>
+              <span class="tag">OWASP</span>
+              <span class="tag">Network</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card grid-item web wow animate__animated animate__zoomIn">
+          <div class="project-img-placeholder">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80" alt="Portfolio Website">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">Web Development</span>
+            <h5>Custom Responsive Portfolio</h5>
+            <p>Modern portfolio website built with responsive design, clean layout, and performance optimization.</p>
+            <div class="tag-list">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card grid-item web wow animate__animated animate__zoomIn">
+          <div class="project-img-placeholder">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="E-Commerce Storefront">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">Full-Stack Development</span>
+            <h5>E-Commerce Storefront</h5>
+            <p>Full-stack e-commerce application featuring Stripe payment integration and user authentication.</p>
+            <div class="tag-list">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card grid-item iot wow animate__animated animate__zoomIn">
+          <div class="project-img-placeholder">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Smart Home Controller">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">IoT Development</span>
+            <h5>Smart Home Controller</h5>
+            <p>Arduino-based sensor system for real-time monitoring of plant moisture levels and home automation.</p>
+            <div class="tag-list">
+              <span class="tag">Arduino</span>
+              <span class="tag">IoT</span>
+              <span class="tag">Sensors</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card grid-item data wow animate__animated animate__zoomIn">
+          <div class="project-img-placeholder">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Data Analysis">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-category">Data Analysis</span>
+            <h5>Data Analysis Projects</h5>
+            <p>Comprehensive data cleaning, analysis, and visualization using Python, Power BI, and SQL on real-world datasets.</p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Pandas</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end gridder -->
+
+      <div class="text-center wow animate__animated animate__fadeInUp">
+        <a href="https://github.com/MIKECHITI" target="_blank" class="btn btn-theme">
+          View All on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <div class="vg-page page-contact" id="contact">
+    <div class="container">
+      <div class="text-center wow animate__animated animate__fadeInUp">
+        <div class="badge-subhead">Contact</div>
+      </div>
+      <h1 class="text-center fw-normal wow animate__animated animate__fadeInUp">Get In Touch</h1>
+      <p class="text-center text-muted mb-5 wow animate__animated animate__fadeInUp">
+        Let's work together on your next data or development project.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="contact-info-item wow animate__animated animate__fadeInUp">
+            <div class="icon"><i class="icon-location-pin"></i></div>
+            <div>
+              <h6>Location</h6>
+              <p>Nairobi, Kenya</p>
+            </div>
+          </div>
+          <div class="contact-info-item wow animate__animated animate__fadeInUp">
+            <div class="icon"><i class="icon-social-whatsapp"></i></div>
+            <div>
+              <h6>WhatsApp</h6>
+              <p>+254 113 112 051</p>
+            </div>
+          </div>
+          <div class="contact-info-item wow animate__animated animate__fadeInUp">
+            <div class="icon"><i class="icon-social-github"></i></div>
+            <div>
+              <h6>GitHub</h6>
+              <p><a href="https://github.com/MIKECHITI" target="_blank" style="color:var(--theme-color)">github.com/MIKECHITI</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item wow animate__animated animate__fadeInUp">
+            <div class="icon"><i class="icon-social-twitter"></i></div>
+            <div>
+              <h6>Twitter / X</h6>
+              <p><a href="https://x.com/chiti_ke" target="_blank" style="color:var(--theme-color)">@chiti_ke</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <form class="vg-contact-form wow animate__animated animate__fadeInRight" id="contactForm">
+            <div class="form-row">
+              <div class="col-12 mt-3">
+                <input class="form-control" type="text" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 mt-3">
+                <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+              </div>
+              <div class="col-md-6 mt-3">
+                <input class="form-control" type="text" name="subject" placeholder="Subject">
+              </div>
+              <div class="col-12 mt-3">
+                <textarea class="form-control" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <div class="col-12 mt-3">
+                <button type="submit" class="btn btn-theme px-5">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <div class="vg-footer">
+    <h1><span>Michael</span> Mwombe</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="footer-info">
+            <p>Where to find me</p>
+            <hr class="divider">
+            <p class="fs-large fg-white">Nairobi, Kenya</p>
+            <div class="footer-social mt-3">
+              <a href="https://github.com/MIKECHITI" target="_blank"><i class="icon-social-github"></i></a>
+              <a href="https://x.com/chiti_ke" target="_blank"><i class="icon-social-twitter"></i></a>
+              <a href="https://wa.me/+254113112051" target="_blank"><i class="icon-social-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Quick Links</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Tech Stack</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li>Python · Pandas · NumPy</li>
+              <li>Node.js · Express · MongoDB</li>
+              <li>React · JavaScript · HTML/CSS</li>
+              <li>Power BI · PostgreSQL · Excel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p class="mb-0">© 2026 Michael Mwombe. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <script>
+    // WOW.js
+    new WOW().init();
+
+    // Sticky navbar
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('sticky-active', window.scrollY > 80);
+      document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 300);
+    });
+
+    // Back to top
+    document.getElementById('backToTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 100) current = s.id;
+      });
+      document.querySelectorAll('.nav-item').forEach(li => {
+        li.classList.remove('active');
+        if (li.querySelector(`a[href="#${current}"]`)) li.classList.add('active');
+      });
+    });
+
+    // Counter Up
+    $('.number').counterUp({ delay: 10, time: 1500 });
+
+    // Project filter
+    document.querySelectorAll('#filterBtns .btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('#filterBtns .btn').forEach(b => b.classList.remove('selected'));
+        this.classList.add('selected');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('#projectGrid .project-card').forEach(card => {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = 'block';
+            card.style.animation = 'none';
+            card.offsetHeight;
+            card.style.animation = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Contact form
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type=submit]');
+      btn.textContent = 'Message Sent ✓';
+      btn.style.background = '#22c55e';
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.background = '';
+        this.reset();
+      }, 3000);
+    });
+  </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
